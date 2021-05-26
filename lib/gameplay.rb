@@ -8,6 +8,8 @@ attr_reader :messages, :sequence, :game_started
     @messages = messages
     @sequence = sequence
     @game_started = false
+    @guess_limit = 10
+    @guess_count = 0
   end
 
   def check_user_input(input)
@@ -22,7 +24,9 @@ attr_reader :messages, :sequence, :game_started
   end
 
   def check_guess(guess)
-
+    if input == sequence.master_string
+      puts messages.win
+    elsif
   end
 
 

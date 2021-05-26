@@ -43,5 +43,10 @@ RSpec.describe Messages do
     expect(messages.lose).to eq("It has been 10 attempts and the Master Code has not been cracked.
     Would you like to (p)lay again, or (q)uit and have a snack?")
   end
-end
 
+  it 'has a quit message' do
+    messages = Messages.new
+
+    expect(messages.quit).to eq("You have now quit the game.")
+  end
+end
