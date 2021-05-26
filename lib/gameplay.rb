@@ -21,6 +21,9 @@ attr_reader :messages, :sequence, :game_started
     end
   end
 
+  def check_guess(guess)
+
+  end
 
 
 end

@@ -12,4 +12,13 @@ while user_input != "q" && gameplay.game_started == false
   user_input = gets.chomp
 end
 
-puts gameplay.messages.quit
+guess = gets.chomp
+
+ while gameplay.game_started == true
+   gameplay.check_guess(guess)
+   guess = gets.chomp
+ end
+
+if user_input == "q"
+  puts gameplay.messages.quit
+end
