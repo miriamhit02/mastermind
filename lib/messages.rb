@@ -1,8 +1,7 @@
 class Messages
 
   def welcome
-    "Welcome to MASTERMIND. Do you want to (p)lay, read the (i)nstructions,
-    or (q)uit?"
+    "Welcome to MASTERMIND. Do you want to (p)lay, read the (i)nstructions, or (q)uit?"
   end
 
   def i
@@ -28,5 +27,9 @@ class Messages
   def lose
     "It has been 10 attempts and the Master Code has not been cracked.
     Would you like to (p)lay again, or (q)uit and have a snack?"
+  end
+
+  def quit
+    "You have now quit the game."
   end
 end
